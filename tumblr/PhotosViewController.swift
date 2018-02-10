@@ -2,7 +2,7 @@
 //  PhotosViewController.swift
 //  
 //
-//  Created by Godwin Pang on 1/31/18.
+//  Created by Godwin Pang and Guanxin Li on 1/31/18.
 //
 
 import UIKit
@@ -70,7 +70,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(280)
+        return CGFloat(200)
     }
 
     /*

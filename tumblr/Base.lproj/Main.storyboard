@@ -18,8 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jGd-Dk-PyL">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jGd-Dk-PyL">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="210" id="20P-kb-z5d" customClass="PhotoCell" customModule="tumblr" customModuleProvider="target">
@@ -29,16 +30,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="209.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hyK-7o-Tym">
-                                                    <rect key="frame" x="5" y="5" width="310" height="199.5"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyK-7o-Tym">
+                                                    <rect key="frame" x="5" y="5" width="307" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="hyK-7o-Tym" firstAttribute="leading" secondItem="vDM-tF-olp" secondAttribute="leading" constant="5" id="1NH-bt-kRa"/>
-                                                <constraint firstAttribute="trailing" secondItem="hyK-7o-Tym" secondAttribute="trailing" constant="5" id="H3f-bP-LSE"/>
-                                                <constraint firstItem="hyK-7o-Tym" firstAttribute="top" secondItem="vDM-tF-olp" secondAttribute="top" constant="5" id="R1F-HN-gfg"/>
-                                                <constraint firstAttribute="bottom" secondItem="hyK-7o-Tym" secondAttribute="bottom" constant="5" id="wx0-Sd-B4D"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="photoView" destination="hyK-7o-Tym" id="I4J-fG-8B7"/>
@@ -48,12 +44,6 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="jGd-Dk-PyL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2Wa-zb-Q0s"/>
-                            <constraint firstItem="jGd-Dk-PyL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2ma-Z5-dem"/>
-                            <constraint firstItem="jGd-Dk-PyL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dGh-zv-Hoe"/>
-                            <constraint firstItem="jGd-Dk-PyL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nWV-Bi-30n"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
